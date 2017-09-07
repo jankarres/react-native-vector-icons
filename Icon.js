@@ -1,12 +1,12 @@
 /**
- * FontAwesome icon set component.
- * Usage: <FontAwesome name="icon-name" size={20} color="#4F8EF7" />
+ * Cstrx Icon icon set component.
+ * Usage: <Icon name="icon-name" size={20} color="#4F8EF7" />
  */
 
 import createIconSet from './lib/create-icon-set';
-import glyphMap from './glyphmaps/FontAwesome.json';
+import glyphMap from './glyphmaps/Icon.json';
 
-const iconSet = createIconSet(glyphMap, 'FontAwesome', 'FontAwesome.ttf');
+const iconSet = createIconSet(glyphMap, 'Icon', 'Icon.ttf');
 
 export default iconSet;
 

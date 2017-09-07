@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import Icon from '../../glyphmaps/Icon.json';
+import FontAwesome from '../../glyphmaps/FontAwesome.json';
 import Ionicons from '../../glyphmaps/Ionicons.json';
 
 const IconFamilies = {
-  Icon,
+  FontAwesome,
   Ionicons,
 };
 
@@ -47,7 +47,7 @@ class SearchBar extends Component {
       <div className="Search-Container">
         <div className="Search-Content">
           <form onSubmit={this.handleSubmit}>
-            <Icon family="Icon" name="search" className="Search-Icon" />
+            <Icon family="FontAwesome" name="search" className="Search-Icon" />
             <input
               ref={ref => this.inputRef = ref}
               placeholder="Search for an icon"

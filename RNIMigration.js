@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'react-native-vector-icons/Icon';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Foundation from 'react-native-vector-icons/Foundation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -8,7 +8,12 @@ import Zocial from 'react-native-vector-icons/Zocial';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 
 const ICON_SET_MAP = {
-  icon: Icon,
+  fontawesome: FontAwesome,
+  foundation: Foundation,
+  ion: Ionicons,
+  material: MaterialIcons,
+  zocial: Zocial,
+  simpleline: SimpleLineIcons,
 };
 
 // This is a composition is a drop in replacement for users migrating from the

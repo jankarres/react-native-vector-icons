@@ -1,12 +1,12 @@
 /**
- * FontAwesome icon set component.
- * Usage: <FontAwesome name="icon-name" size={20} color="#4F8EF7" />
+ * CustomIconFont icon set component.
+ * Usage: <CustomIconFont name="icon-name" size={20} color="#4F8EF7" />
  */
 
 import createIconSet from './lib/create-icon-set';
-import glyphMap from './glyphmaps/FontAwesome.json';
+import glyphMap from './glyphmaps/CustomIconFont.json';
 
-const iconSet = createIconSet(glyphMap, 'FontAwesome', 'FontAwesome.ttf');
+const iconSet = createIconSet(glyphMap, 'CustomIconFont', 'CustomIconFont.ttf');
 
 export default iconSet;
 

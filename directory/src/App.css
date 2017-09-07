@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../../Fonts/FontAwesome.ttf') format('truetype');
+  font-family: 'CustomIconFont';
+  src: url('../../Fonts/CustomIconFont.ttf') format('truetype');
 }
 
 @font-face {

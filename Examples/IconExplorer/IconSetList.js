@@ -15,35 +15,14 @@ import dismissKeyboard from 'dismissKeyboard';
 import _ from 'lodash';
 
 import IconList from './IconList';
-import Entypo from 'react-native-vector-icons/Entypo';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Foundation from 'react-native-vector-icons/Foundation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Octicons from 'react-native-vector-icons/Octicons';
-import Zocial from 'react-native-vector-icons/Zocial';
-import EntypoGlyphs from 'react-native-vector-icons/glyphmaps/Entypo';
-import EvilIconsGlyphs from 'react-native-vector-icons/glyphmaps/EvilIcons';
 import FontAwesomeGlyphs from 'react-native-vector-icons/glyphmaps/FontAwesome';
-import FoundationGlyphs from 'react-native-vector-icons/glyphmaps/Foundation';
 import IoniconsGlyphs from 'react-native-vector-icons/glyphmaps/Ionicons';
-import MaterialIconsGlyphs from 'react-native-vector-icons/glyphmaps/MaterialIcons';
-import MaterialCommunityIconsGlyphs from 'react-native-vector-icons/glyphmaps/MaterialCommunityIcons';
-import OcticonsGlyphs from 'react-native-vector-icons/glyphmaps/Octicons';
-import ZocialGlyphs from 'react-native-vector-icons/glyphmaps/Zocial';
 
 const GLYPH_MAPS = {
-  Entypo: EntypoGlyphs,
-  EvilIcons: EvilIconsGlyphs,
   FontAwesome: FontAwesomeGlyphs,
-  Foundation: FoundationGlyphs,
-  Ionicons: IoniconsGlyphs,
-  MaterialIcons: MaterialIconsGlyphs,
-  MaterialCommunityIcons: MaterialCommunityIconsGlyphs,
-  Octicons: OcticonsGlyphs,
-  Zocial: ZocialGlyphs,
+  Ionicons: IoniconsGlyphs
 };
 
 const ICON_SETS = _.map({
@@ -57,12 +36,12 @@ const ICON_SETS = _.map({
   Octicons,
   Zocial,
 }, (component, name) => ({ name, component }))
-.map(iconSet => {
-  // Some icons have multiple names, so group them by glyph
-  const glyphMap = GLYPH_MAPS[iconSet.name];
-  iconSet.glyphs = _.values(_.groupBy(Object.keys(glyphMap), name => glyphMap[name]));
-  return iconSet;
-});
+  .map(iconSet => {
+    // Some icons have multiple names, so group them by glyph
+    const glyphMap = GLYPH_MAPS[iconSet.name];
+    iconSet.glyphs = _.values(_.groupBy(Object.keys(glyphMap), name => glyphMap[name]));
+    return iconSet;
+  });
 
 const BUTTONS = [
   {
@@ -85,25 +64,31 @@ const BUTTONS = [
 
 const STYLING = [
   { name: 'github', size: 40, color: '#333' },
-  { name: 'heart', size: 30, color: 'white', containerStyle: {
-    backgroundColor: '#e0284f',
-    borderRadius: 23,
-    paddingHorizontal: 8,
-    paddingTop: 9,
-    paddingBottom: 7,
-  } },
-  { name: 'star', size: 20, color: '#FF0000', containerStyle: {
-    borderRadius: 20,
-    padding: 7,
-    borderWidth: 3,
-    backgroundColor: '#FFDD00',
-    borderColor: '#165E00',
-  } },
-  { name: 'font', size: 20, color: 'white', containerStyle: {
-    borderRadius: 5,
-    padding: 5,
-    backgroundColor: '#47678e',
-  } },
+  {
+    name: 'heart', size: 30, color: 'white', containerStyle: {
+      backgroundColor: '#e0284f',
+      borderRadius: 23,
+      paddingHorizontal: 8,
+      paddingTop: 9,
+      paddingBottom: 7,
+    }
+  },
+  {
+    name: 'star', size: 20, color: '#FF0000', containerStyle: {
+      borderRadius: 20,
+      padding: 7,
+      borderWidth: 3,
+      backgroundColor: '#FFDD00',
+      borderColor: '#165E00',
+    }
+  },
+  {
+    name: 'font', size: 20, color: 'white', containerStyle: {
+      borderRadius: 5,
+      padding: 5,
+      backgroundColor: '#47678e',
+    }
+  },
 ];
 
 const INLINE = [

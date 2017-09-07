@@ -1,28 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import Entypo from '../../glyphmaps/Entypo.json';
-import EvilIcons from '../../glyphmaps/EvilIcons.json';
 import FontAwesome from '../../glyphmaps/FontAwesome.json';
-import Foundation from '../../glyphmaps/Foundation.json';
 import Ionicons from '../../glyphmaps/Ionicons.json';
-import MaterialCommunityIcons from '../../glyphmaps/MaterialCommunityIcons.json';
-import MaterialIcons from '../../glyphmaps/MaterialIcons.json';
-import SimpleLineIcons from '../../glyphmaps/SimpleLineIcons.json';
-import Octicons from '../../glyphmaps/Octicons.json';
-import Zocial from '../../glyphmaps/Zocial.json';
 
 const IconFamilies = {
-  Entypo,
-  EvilIcons,
   FontAwesome,
-  Foundation,
   Ionicons,
-  MaterialCommunityIcons,
-  MaterialIcons,
-  SimpleLineIcons,
-  Octicons,
-  Zocial,
 };
 
 class Icon extends Component {
